@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Telephone -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>區域能源管理系統與雲端平台</title>
+    <!-- Bootstrap CSS 文件 -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap3.css" />
+    <!-- leaflet-->
+    <link rel="stylesheet" href="css/leaflet3.css" />
+    <link rel="stylesheet" href="css/leaflet3-markercluster.css" />
+    <!-- 設計美化 -->
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <div class="base-wrapper">
+        <header class="base-header">
+            <nav class="navbar navbar-default base-header-wrapper">
+                <div class="container-fluid">
+                    <div class="navbar-header major-logo">
+                        <a class="navbar-brand" href="#" title="返回首頁">
+                            <div class="img-logo"><img src="images/logo.png"></div>
+                            <h1>區域能源管理系統與雲端平台</h1>
+                        </a>
+                    </div>
+                    <ul class="nav navbar-nav default-msg-tool">
+                        <li class="clock">
+                            <div class="date">日期</div>
+                            <div class="time">時間</div>
+                        </li>
+                        <li class="login">
+                            <button class="btn-login" onclick="goIndex()" title="登入">登入</button>
+                        </li>   
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="container-fluid base-content">
+            <div class="row base-content-wrapper">
+                <section class="col-md-4">
+                    <button onclick="goIndex()" type="button" class="button block-info">
+                        <div class="block-info-title"><h2>機關學校</h2></div>
+                        <div class="row col-md-12 block-info-list">
+                            <ul class="col-lg-12">
+                                <li class="text-primary">
+                                    <b>總用電量</b>
+                                    <span>7654321<i>kWp</i></span>
+                                    
+                                </li>
+                                <li class="text-success">
+                                    <b>總發電量</b>
+                                    <span>7654321<i>kWp</i></span>
+                                    
+                                </li>
+                                <li class="text-warning">
+                                    <b>總節電量</b>
+                                    <span>7654321<i>kWp</i></span>
+                                    
+                                </li>
+                                <li class="operation">
+                                    <b>運作情況</b>
+                                    <span>正常</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </button>
+
+                    <button onclick="goIndex()" type="button" class="button block-info">
+                        
+                            <div class="block-info-title"><h2>公共區域</h2></div>
+                            <div class="row col-md-12 block-info-list">
+                                <ul class="col-lg-12">
+                                    <li class="text-primary">
+                                        <b>總用電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-success">
+                                        <b>總發電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-warning">
+                                        <b>總節電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="operation">
+                                        <b>運作情況</b>
+                                        <span>正常</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                    </button>
+
+                    <button onclick="goIndex()" type="button" class="button block-info">
+                        
+                            <div class="block-info-title"><h2>公共住宅</h2></div>
+                            <div class="row col-md-12 block-info-list">
+                                <ul class="col-lg-12">
+                                    <li class="text-primary">
+                                        <b>總用電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-success">
+                                        <b>總發電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-warning">
+                                        <b>總節電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="operation">
+                                        <b>運作情況</b>
+                                        <span>正常</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                    </button>
+                </section>  
+                <section class="col-md-4">
+                    <button onclick="goIndex()" type="button" class="button block-info">
+                        
+                            <div class="block-info-title"><h2>商辦</div>
+                            <div class="row col-md-12 block-info-list">
+                                <ul class="col-lg-12">
+                                    <li class="text-primary">
+                                        <b>總用電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-success">
+                                        <b>總發電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-warning">
+                                        <b>總節電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="operation">
+                                        <b>運作情況</b>
+                                        <span>正常</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                    </button>
+                    <button onclick="goIndex()" type="button" class="button block-info">
+                        
+                            <div class="block-info-title"><h2>太陽能發電</h2></div>
+                            <div class="row col-md-12 block-info-list">
+                                <ul class="col-lg-12">
+                                    <li class="text-primary">
+                                        <b>總用電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-success">
+                                        <b>總發電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-warning">
+                                        <b>總節電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="operation">
+                                        <b>運作情況</b>
+                                        <span>正常</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                    </button>
+
+                    <button onclick="goIndex()" type="button" class="button block-info">
+                        
+                            <div class="block-info-title"><h2>儲能系統</h2></div>
+                            <div class="row col-md-12 block-info-list">
+                                <ul class="col-lg-12">
+                                    <li class="text-primary">
+                                        <b>總用電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-success">
+                                        <b>總發電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="text-warning">
+                                        <b>總節電量</b>
+                                        <span>7654321<i>kWp</i></span>
+                                        
+                                    </li>
+                                    <li class="operation">
+                                        <b>運作情況</b>
+                                        <span>正常</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                    </button>
+                </section>  
+                <section class="col-md-4" class="taipei-map">
+                    <div id="map"></div>
+                </section>
+            </div>
+        </main>
+        <footer class="base-footer">
+            <div class="copyright">
+                <b>@ 2018. Powered by AllWin</b> 
+            </div>
+        </footer>
+    </div>
+</body>
+
+<!-- jquery 文件 -->
+<script src="js/jquery3.js"></script>
+<!-- Bootstrap 文件 -->
+<script src="js/bootstrap3.js" ></script>
+<!-- leaflet -->
+<script src="js/leaflet3.js"></script>
+<script src="js/leaflet3-markercluster.js"></script>
+<!-- 時間 -->
+<script src="js/moment.min.js"></script>
+<!-- 自訂 -->
+<script src="js/index.js"></script>
+<script src="js/map.js"></script>
+</html>
+
+    

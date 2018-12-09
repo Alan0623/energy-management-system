@@ -1,0 +1,68 @@
+	$rwd: true; // true 或 false，是否開啟 rwd
+//主要版面顏色================================================================
+    $block-color: #182359; //區塊被景色
+    $block-line-color: rgba(0, 202, 245, 0.7) solid thin;
+    $white: #fff;
+//隱藏文字與...================================================================
+    %hide-text {//隱藏文字的方法
+        font: 0/0 a;
+        color: transparent;
+    }
+    %reset-ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+//文字樣式================================================================
+	/* 修正粗體 */
+	@font-face {
+		font-family: '微軟正黑體修正';
+		unicode-range: U+7db0, U+78A7, U+7B75; /* ASCII (碧筵綰) */
+		font-style: normal;
+		font-weight: bold;
+		src: local(Yu Gothic), local(MS Gothic);
+	}
+	/* 一般粗細的時候改回微軟正黑 */
+	@font-face {
+		font-family: '微軟正黑體修正';
+		unicode-range: U+7db0, U+78A7, U+7B75; /* ASCII (碧筵綰) */
+		font-style: normal;
+		font-weight: normal;
+		src: local(微軟正黑體);
+	}
+	$base-font-style: Arial,'微軟正黑體修正', '微軟正黑體', 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
+    $no-font-style: 'Open Sans', sans-serif;
+    
+//RWD設定================================================================
+    $pc-width: 1200px; //pc寬度
+    $pad-width: 900px; //pad寬度
+    $bigphone-width: 660px; //phone寬度
+    $phone-width: 560px; //phone寬度
+    $sphone-width: 320px; //phone最小寬度
+    $rwd-btn-size: 48px; //RWD 手機側欄按鈕大小
+
+//瀏覽器媒體，給 rwd 用================================================================
+    $media: ('center': 'screen and (max-width: #{$pc-width})',
+    'pc': 'screen and (max-width: #{$pc-width}) and (min-width: #{$pad-width + 1})',
+    'mobile': 'screen and (max-width: #{$pad-width})',
+    'pad': 'screen and (max-width: #{$pad-width}) and (min-width: #{$phone-width + 1})',
+    'bigphone': 'screen and (max-width: #{$bigphone-width})',
+    'phone': 'screen and (max-width: #{$phone-width})'
+    );
+
+	@mixin len-rwd($key, $len: 1, $int: 100%) {
+	    //手動設定 rwd 數量，$key 為 $media 的 key，$len 為 rwd 的數量，$int 是被計算的基數
+
+	    @if($rwd==true) {
+
+	        @media #{map-get( $media, $key )} {
+	            max-width: none !important;
+	            width: $int / $len !important;
+	            clear: none;
+
+	            &:nth-child(#{$len}n+1) {
+	                clear: left
+	            }
+	        }
+	    }
+	}

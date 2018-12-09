@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/* line 7, ../sass/_base-variable.scss */
+.base-content-wrapper section .taipei-map h2 {
+  font: 0/0 a;
+  color: transparent;
+}
+
+/* line 11, ../sass/_base-variable.scss */
+.block-info-list ul, .block-info-list ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 修正粗體 */
+@font-face {
+  font-family: '微軟正黑體修正';
+  unicode-range: U+7db0, U+78A7, U+7B75;
+  /* ASCII (碧筵綰) */
+  font-style: normal;
+  font-weight: bold;
+  src: local(Yu Gothic), local(MS Gothic);
+}
+/* 一般粗細的時候改回微軟正黑 */
+@font-face {
+  font-family: '微軟正黑體修正';
+  unicode-range: U+7db0, U+78A7, U+7B75;
+  /* ASCII (碧筵綰) */
+  font-style: normal;
+  font-weight: normal;
+  src: local(微軟正黑體);
+}
+/* line 2, ../sass/_base-ui.scss */
+body {
+  font-family: Arial, "微軟正黑體修正", "微軟正黑體", "Helvetica Neue", Helvetica, sans-serif, "新細明體";
+  background-color: #0d1a51;
+  background: linear-gradient(-90deg, #081033 0%, #0d1a51 12%);
+  background: -moz-linear-gradient(-90deg, #081033 0%, #0d1a51 12%);
+  background: -webkit-linear-gradient(-90deg, #081033 0%, #0d1a51 12%);
+  background: -o-linear-gradient(-90deg, #081033 0%, #0d1a51 12%);
+}
+
+/* line 12, ../sass/_base-ui.scss */
+.base-wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 16, ../sass/_base-ui.scss */
+.base-header {
+  margin: 0 25px;
+}
+
+/* line 19, ../sass/_base-ui.scss */
+.base-content {
+  margin: 0 25px;
+  padding-bottom: 20px;
+}
+
+/* line 23, ../sass/_base-ui.scss */
+.base-footer {
+  position: absolute;
+  bottom: 10px;
+}
+/* line 27, ../sass/_base-ui.scss */
+.base-footer .copyright b {
+  color: #fff;
+  opacity: .95;
+  font-weight: normal;
+  margin-left: 40px;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+/* line 38, ../sass/_base-ui.scss */
+.base-header-wrapper {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: initial;
+  margin-bottom: 0px;
+}
+/* line 44, ../sass/_base-ui.scss */
+.base-header-wrapper .major-logo .navbar-brand {
+  padding: 0;
+  margin: 0;
+  height: 87px;
+  box-sizing: border-box;
+}
+/* line 49, ../sass/_base-ui.scss */
+.base-header-wrapper .major-logo .navbar-brand .img-logo {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  height: 87px;
+  float: left;
+}
+/* line 56, ../sass/_base-ui.scss */
+.base-header-wrapper .major-logo .navbar-brand .img-logo img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* line 63, ../sass/_base-ui.scss */
+.base-header-wrapper .major-logo .navbar-brand h1 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 87px;
+  float: left;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 2.2em;
+  line-height: 87px;
+  font-weight: lighter;
+}
+/* line 78, ../sass/_base-ui.scss */
+.base-header-wrapper .default-msg-tool {
+  position: absolute;
+  right: 0;
+}
+/* line 81, ../sass/_base-ui.scss */
+.base-header-wrapper .default-msg-tool .clock {
+  color: #fff;
+  font-size: 2.2em;
+  line-height: 87px;
+  font-family: "Open Sans", sans-serif;
+}
+/* line 86, ../sass/_base-ui.scss */
+.base-header-wrapper .default-msg-tool .clock .date {
+  display: inline-block;
+}
+/* line 90, ../sass/_base-ui.scss */
+.base-header-wrapper .default-msg-tool .clock .time {
+  display: inline-block;
+}
+/* line 94, ../sass/_base-ui.scss */
+.base-header-wrapper .default-msg-tool .login {
+  margin-top: 20px;
+  margin-right: 12px;
+  margin-left: 20px;
+}
+/* line 98, ../sass/_base-ui.scss */
+.base-header-wrapper .default-msg-tool .login .btn-login {
+  border-radius: 5px;
+  display: block;
+  width: 110px;
+  height: 48px;
+  box-sizing: border-box;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  color: #9aecfd;
+  border: #00caf5 solid thin;
+  padding-left: 30px;
+  padding-right: 0;
+  position: relative;
+  background: linear-gradient(-90deg, #24438b 0%, #162052 12%);
+  background: -moz-linear-gradient(-90deg, #24438b 0%, #162052 12%);
+  background: -webkit-linear-gradient(-90deg, #24438b 0%, #162052 12%);
+  background: -o-linear-gradient(-90deg, #24438b 0%, #162052 12%);
+}
+/* line 115, ../sass/_base-ui.scss */
+.base-header-wrapper .default-msg-tool .login .btn-login:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  top: 12px;
+  left: 15px;
+  background-image: url("../images/icon/login.png");
+  background-size: cover;
+}
+
+/* line 133, ../sass/_base-ui.scss */
+.base-content-wrapper section .block-info {
+  position: relative;
+  width: 100%;
+  background-color: #182359;
+  background-repeat: repeat;
+  border: rgba(0, 202, 245, 0.7) solid thin;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 17px;
+}
+/* line 144, ../sass/_base-ui.scss */
+.base-content-wrapper section .block-info:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  border: rgba(0, 202, 245, 0.7) solid thin;
+  border-radius: 4px;
+  background-image: url("../images/bg/block_bg.gif");
+}
+/* line 155, ../sass/_base-ui.scss */
+.base-content-wrapper section .block-info:after {
+  display: block;
+  width: 125px;
+  height: 38px;
+  line-height: 38px;
+  content: "更多資訊";
+  color: #9DEEFF;
+  font-size: 1.3em;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  background-image: url("../images/bg/btn-more.png");
+  background-size: cover;
+  background-position: top right;
+  border-radius: 5px;
+  border: #192a8a solid thin;
+}
+/* line 172, ../sass/_base-ui.scss */
+.base-content-wrapper section .block-info .block-info-title {
+  display: block;
+  height: 76px;
+  text-align: left;
+  position: relative;
+  line-height: 50px;
+  padding-left: 10px;
+}
+/* line 179, ../sass/_base-ui.scss */
+.base-content-wrapper section .block-info .block-info-title h2 {
+  font-size: 1.8em;
+  padding-left: 36px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+/* line 184, ../sass/_base-ui.scss */
+.base-content-wrapper section .block-info .block-info-title h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  top: 1px;
+  left: 10px;
+  background-size: contain;
+  background-image: url("../images/icon/title_icon.png");
+}
+/* line 196, ../sass/_base-ui.scss */
+.base-content-wrapper section .block-info .block-info-title:before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  top: -18px;
+  left: -8px;
+  background-image: url("../images/bg/block_bg_lt.png");
+}
+/* line 205, ../sass/_base-ui.scss */
+.base-content-wrapper section .block-info .block-info-title:after {
+  content: "";
+  position: absolute;
+  width: 291px;
+  height: 50px;
+  top: -18px;
+  right: -8px;
+  background-image: url("../images/bg/block_bg_title.png");
+}
+
+/* line 225, ../sass/_base-ui.scss */
+.block-info-list {
+  margin: 0;
+  padding: 0;
+  margin-top: -48px;
+}
+/* line 229, ../sass/_base-ui.scss */
+.block-info-list ul {
+  position: relative;
+  padding: 5px 0 10px 0;
+}
+/* line 233, ../sass/_base-ui.scss */
+.block-info-list ul:before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  bottom: -3px;
+  left: -8px;
+  background-image: url("../images/bg/block_bg_lb.png");
+}
+/* line 242, ../sass/_base-ui.scss */
+.block-info-list ul:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 36px;
+  bottom: -3px;
+  right: -8px;
+  background-image: url("../images/bg/block_bg_rb.png");
+}
+/* line 251, ../sass/_base-ui.scss */
+.block-info-list ul li {
+  color: #fff;
+  background-color: rgba(12, 23, 71, 0.7);
+  padding: 0px;
+  margin: 5px 10px;
+  width: calc(50% - 20px);
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  border: rgba(0, 202, 245, 0.7) solid thin;
+  border-radius: 5px;
+  text-align: right;
+  position: relative;
+}
+/* line 265, ../sass/_base-ui.scss */
+.block-info-list ul li::after {
+  content: "";
+  z-index: 1;
+  display: block;
+  height: 50px;
+  width: 100%;
+  bottom: 0px;
+  background-color: rgba(9, 13, 33, 0.5);
+}
+/* line 276, ../sass/_base-ui.scss */
+.block-info-list ul li b {
+  border-bottom: #060E35 solid 4px;
+  height: 42px;
+  display: block;
+  line-height: 42px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 10px;
+  position: relative;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+/* line 287, ../sass/_base-ui.scss */
+.block-info-list ul li b::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
+  border-bottom: #0D3357 solid thin;
+}
+/* line 297, ../sass/_base-ui.scss */
+.block-info-list ul li span {
+  font-family: "Open Sans", sans-serif;
+  line-height: 48px;
+  font-size: 2.6em;
+  font-weight: bold;
+  padding-right: 10px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 4px;
+  color: #ffb858;
+}
+/* line 309, ../sass/_base-ui.scss */
+.block-info-list ul li:nth-child(1) span {
+  color: #ffb858;
+}
+/* line 310, ../sass/_base-ui.scss */
+.block-info-list ul li:nth-child(2) span {
+  color: #87eefc;
+}
+/* line 311, ../sass/_base-ui.scss */
+.block-info-list ul li:nth-child(3) span {
+  color: #ff6fe1;
+}
+/* line 312, ../sass/_base-ui.scss */
+.block-info-list ul li:nth-child(4) span {
+  color: #36ef32;
+}
+/* line 313, ../sass/_base-ui.scss */
+.block-info-list ul li:nth-child(5) span {
+  color: #bc85ff;
+}
+/* line 314, ../sass/_base-ui.scss */
+.block-info-list ul li:nth-child(6) span {
+  color: #ffb858;
+}
+/* line 315, ../sass/_base-ui.scss */
+.block-info-list ul li i {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  padding: 5px 8px;
+  border: #717171 solid thin;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 0.4em;
+  vertical-align: bottom;
+  color: #D8D8D8;
+}
+
+/* line 330, ../sass/_base-ui.scss */
+#map {
+  height: calc(100vh - 138px);
+  min-height: calc(100vh - 138px);
+}
