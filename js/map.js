@@ -99,7 +99,7 @@
     taipei.forEach(function (v, i) {
         $.getJSON('taipei/' + v + '.geojson', function (r) {
             L.geoJSON(r, {
-                color: '#3a65ff'
+                color: '#955f1d' //區塊顏色
             }).addTo(map);
         });
     });

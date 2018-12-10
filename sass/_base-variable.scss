@@ -1,7 +1,11 @@
 	$rwd: true; // true 或 false，是否開啟 rwd
 //主要版面顏色================================================================
-    $block-color: #182359; //區塊被景色
-    $block-line-color: rgba(0, 202, 245, 0.7) solid thin;
+	$block-li-color: rgba(50, 50, 50, 0.5); //區塊被景色
+	$block-li-color-hover: rgb(22, 22, 22); //區塊被景色
+	$block-line-color: orange solid thin; //#00f3bd
+	$block-line-color-hover: rgb(255, 237, 138) solid thin; //#00f3bd
+	$btn-font-color: orange;
+	$btn-font-color-hover: rgb(255, 237, 138);
     $white: #fff;
 //隱藏文字與...================================================================
     %hide-text {//隱藏文字的方法
