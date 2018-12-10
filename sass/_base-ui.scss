@@ -18,6 +18,10 @@ body{
 .base-content{
     margin: 0 25px;
     padding-bottom: 20px;
+    @media screen and (max-width: $macbook-width) {
+        margin: 0;
+        padding: 0 20px;
+    }
 }
 .base-footer{
     position: absolute;
@@ -30,6 +34,9 @@ body{
             margin-left: 40px;
             font-size: 1em;
             line-height: 1.6em;
+            @media screen and (max-width: $macbook-width) {
+                margin-left: 20px;
+            }
         }
     }
 }
@@ -39,20 +46,36 @@ body{
     border-color: transparent;
     border-radius: initial;
     margin-bottom: 0px;
+    .container-fluid{
+        @media screen and (max-width: $macbook-width) {
+            padding: 0;
+            margin-left: -10px;
+        }
+    }
     .major-logo {
         .navbar-brand {
             padding: 0;
             margin: 0;
             height: 87px;
+            
             box-sizing: border-box;
+            @media screen and (max-width: $macbook-width){
+                height: 65px;    
+            }
             .img-logo{
                 display: block;
                 margin: 0;
                 padding: 0;
                 margin-right: 10px;
                 height: 87px;
+                width: 87px;
                 float: left;
+                @media screen and (max-width: $macbook-width) {
+                    height: 65px;
+                    width: 65px;
+                }
                 img{
+                    width: 100%;
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -70,6 +93,11 @@ body{
                 font-size: 2.2em;
                 line-height: 87px;
                 font-weight: lighter;
+                @media screen and (max-width: $macbook-width){
+                    font-size: 1.6em;
+                    height: 65px;
+                    line-height: 65px;
+                }
             }
         }
     }
@@ -82,6 +110,10 @@ body{
                 font-size: 2.2em;
                 line-height: 87px;
                 font-family: $no-font-style;
+                @media screen and (max-width: $macbook-width) {
+                   line-height: 65px;
+                   font-size: 1.6em;
+                }
             .date {
                 display: inline-block;
             }
@@ -94,6 +126,10 @@ body{
                 margin-top: 20px;
                 margin-right: 12px;
                 margin-left: 20px;
+                @media screen and (max-width: $macbook-width) {
+                    margin-top: 10px;
+                    margin-right: -5px;
+                }
             .btn-login{  //登入按鈕
                 border-radius: 5px;
                 display: block;
@@ -108,6 +144,9 @@ body{
                 padding-right: 0;
                 position: relative;
                 background-color: #322b27;
+                @media screen and (max-width: $macbook-width) {
+                    height: 44px;
+                }
                 &:before{
                     content: "";
                     position: absolute;
@@ -118,6 +157,9 @@ body{
                     left: 15px;
                     background-image: url('../images/icon/login.png');
                     background-size: cover;
+                    @media screen and (max-width: $macbook-width) {
+                        top: 9px;
+                    }
                 }
                 &:focus,&:hover{
                     background-color: #665c56;
@@ -219,6 +261,7 @@ body{
                     position: absolute;
                     top: 0;
                     z-index: 10;
+
                     &:before {
                         content: "";
                         display: block;
@@ -229,6 +272,14 @@ body{
                         left: -5px;
                         background-size: cover;
                         background-image: url('../images/icon/title_icon.png');
+                    }
+                    @media screen and (max-width: $macbook-width) {
+                        font-size: 1.1em;
+                        padding-left: 12px;
+                        &:before {
+                            width: 15px;
+                            height: 14px;
+                        }
                     }
                 }
                 &:before {
@@ -253,13 +304,42 @@ body{
             }
         }
         &.base-content-list{
-            @media screen and (max-width: 1560px) and (min-width: 992px) {
+            @media screen and (max-width: 1560px) and (min-width: 1441px) {
                 width: 25%;
+            }
+            @media screen and (max-width: $macbook-width) and (min-width: 1201px) {
+                width: 50%;
+                margin-bottom: 20px;
+                &:nth-child(2){
+                    position: absolute;
+                    //width: calc(50% - 25px);
+                    top: 380px;
+                }
+                .block-info{
+                    width: calc(33% - 8px);
+                    margin: 0 5px;
+                    &:nth-child(1) { margin-left: 0;}
+                    &:nth-last-child(1) { margin-right: 0;}
+                }
+            }
+            @media screen and (max-width: 1200px) and (min-width: 600px) {
+                width: 100%;
+                margin-bottom: 20px;
+                .block-info{
+                    width: calc(33% - 13px);
+                    margin: 0 10px;
+                    &:nth-child(1) { margin-left: 0;}
+                    &:nth-last-child(1) { margin-right: 0;}
+                }
             }
         }
         &.base-content-map {
-            @media screen and (max-width: 1560px) and (min-width: 992px) {
+            @media screen and (max-width: 1560px) and (min-width: 1201px) {
                 width: 50%;
+            }
+            @media screen and (max-width: 1200px) and (min-width: 600px) {
+                width: 100%;
+                
             }
         }
         
@@ -275,6 +355,8 @@ body{
         @extend %reset-ul;
         position: relative;
         padding: 5px 0 10px 0;
+        display: inline-table;
+        width: 100%;
         &:before {
             content: "";
             position: absolute;
@@ -292,6 +374,11 @@ body{
             bottom: -3px;
             right: -8px;
             background-image: url('../images/bg/block_bg_rb.png');
+            @media screen and (max-width: $macbook-width) and (min-width: 1201px) {
+                width: 39px;
+                right: -9px;
+                background-image: url('../images/bg/block_bg_rb2.png');
+            }
         }
         li{
             @extend %reset-ul;
@@ -318,6 +405,9 @@ body{
                     bottom: 0px;
                     background-color: rgba(9, 13, 33, 0.5);
                     border-radius: 0 0 5px 5px;
+                    @media screen and (max-width: $macbook-width) {
+                        height: 44px;
+                    }
                 }
 
             b{
@@ -331,7 +421,11 @@ body{
                 position: relative;
                 font-size: 1.2em;
                 font-weight: normal;
-
+                @media screen and (max-width: $macbook-width) {
+                    font-size: 1.1em;
+                    height: 34px;
+                    line-height: 34px;
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -353,6 +447,10 @@ body{
                 right: 0;
                 bottom: 4px;
                 color: #ffb858;
+                @media screen and (max-width: $macbook-width){
+                    font-size: 1.8em;
+                    line-height: 40px;
+                }
             }
             &:nth-child(1){
                 border-radius: 5px 5px 0 0;
@@ -448,7 +546,9 @@ body{
     //margin: 2px;
     border: $block-line-color;
     position: relative;
-    //107px
+    @media screen and (max-width: $macbook-width) {
+        min-height: calc(100vh - 117px);
+    }
 }
 .marker-cluster-small div{
     background-color: #000;
